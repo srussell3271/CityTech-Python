@@ -1,0 +1,10 @@
+#Base is 2 and exponents are on the left side
+
+i=0
+while True:    
+    if(i>=0 and i<10):
+        i=i+1
+        output=(2**i)
+        print(i,output)
+
+        
