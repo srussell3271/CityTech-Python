@@ -1,0 +1,9 @@
+#Finding The Range With User Input
+start= int(input("Enter Starting Number:-"))
+stop= int(input("Enter Ending Number:-"))
+step= int(input("Enter Step Number:-"))
+count=0
+
+for x in range(start,stop,step): 
+    count= count+x
+    print(count)
