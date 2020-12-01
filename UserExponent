@@ -1,0 +1,16 @@
+#Given The User Input, It Will Do It To The Second Power 12 Times
+
+num=[]
+
+
+base=int(input("Please inout a base:-"))
+power=0
+while True: 
+    if power<=12:
+        answer=base**power
+        num.append(answer)
+        print(num)
+        power=power+1
+        
+    else:
+        break
