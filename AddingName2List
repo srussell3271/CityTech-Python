@@ -1,0 +1,16 @@
+#Typing Your Name And See If You Are Registered
+list= []
+
+while True:
+    name= input("Please Enter Your Name:-")
+    if name not in list:
+        print("You will be registered", name)
+        list.append(name)
+    else:
+        print("You have already registered")
+        print(list)
+
+
+
+
+
