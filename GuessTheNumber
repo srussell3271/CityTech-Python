@@ -1,0 +1,44 @@
+#Fully Working Guess The Number
+import random
+
+def guessTheNumber():
+    
+    lower = int(input("Place Lower bound:- ")) 
+    upper = int(input("Place Upper bound:- "))
+    guesses = 6
+    x = random.randint(lower, upper)
+
+    print("You have 5 guesses remaining!")
+          
+    while True:
+    
+        guesses = guesses -1
+        
+        if guesses == 0:
+            break
+        else:
+            
+            guess = int(input("Guess a number: "))
+            
+            if guess == x:
+                print("Congratulations you guessed the number!")
+                break
+            elif guess > x:
+                print("You Guessed too high!")
+            elif guess < x:
+                print("You guessed too small!")
+
+        
+guessTheNumber()
+
+
+def tryAgain():
+
+    again= int(input("Wanna play again? Y/N:-"))
+
+    if again == "Y" or "y":
+        guessTheNumber()
+    elif again ==  "N" or "n":
+        print("Goodbye!")
+
+tryAgain()
