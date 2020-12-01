@@ -1,0 +1,19 @@
+#Prints the day of the week with thee user input of a number
+day= int(input("Enter number 1-7: "))
+
+if day== 1:
+    print("It is Monday")
+if day== 2:
+    print("It is Tuesday")
+if day== 3:
+    print("It is Wednesday")
+if day== 4:
+    print("It is Thursday")
+if day== 5:
+    print("It is Friday")
+if day== 6:
+    print("It is Satuday")
+if day== 7:
+    print("It is Sunday")
+else:
+    print("Please try again")
