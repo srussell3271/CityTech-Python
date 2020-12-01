@@ -1,0 +1,11 @@
+x1= float(input("Enter X1 point: "))
+y1= float(input("Enter Y1 point: "))
+x2= float(input("Enter X2 point: "))
+y2= float(input("Enter Y2 point: "))
+
+def distance(x1,x2,y1,y2):
+  x= ((x2-x1)**2)
+  y= ((y2-y1)**2) 
+  d= (x+y)**0.5
+  print(d)
+distance(x1,x2,y1,y2)
