@@ -1,0 +1,10 @@
+#Calculates Your Body Mass Index
+
+name = input("Please enter your name ")
+weight = float(input("Please entire your weight in pounds "))
+height = float(input("Please entire your height in feet "))
+height =height*12
+
+bmi = 703*(weight/(height**2))
+
+print(name, "your BMI (Body Mass Index) is",int(bmi))
