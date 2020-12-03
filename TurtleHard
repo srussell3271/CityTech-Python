@@ -1,0 +1,18 @@
+#Making A Triangle In A Circle
+
+import turtle 
+wn= turtle.Screen()
+pen = turtle.Turtle()
+
+
+pen.forward (174)
+pen.right (120)
+pen.forward (174)
+pen.right (120)
+pen.forward (174)
+pen.left (120)
+pen.circle (100,360)
+
+
+
+wn.exitonclick()
