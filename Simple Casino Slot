@@ -1,0 +1,45 @@
+#A casino player needs three randomly generated number between 1 and 20 to win the money. The three numbers must be generated individually and must be
+random. For the player to win, the three randomly generated numbers must be identical. Your task is to write a program that can generate these numbers
+individually, compare them, and print them out if the numbers are the same.
+
+import random
+    
+lower = 1
+upper = 20
+x = random.randint(lower, upper)
+y = random.randint(lower, upper)
+z = random.randint(lower, upper)
+
+
+while True:
+   
+    if (x==y) and (y==z):
+        print("You Win")
+        break
+    
+    elif (x==z):
+        if x == y or y == z:
+            y = random.randint(lower, upper)
+            print("So Close")
+            break
+        else:
+            print("Nice Try")
+            break
+            
+    elif (x==y):
+        
+        
+        if x == z or y == z:
+            z = random.randint(lower, upper)
+            print("So Close")
+            break
+        
+        else:
+            print("Nice Try")
+            print(x,y,z)
+            break
+
+    else:
+        print("You Lost")
+        break
+print(x,y,z)
