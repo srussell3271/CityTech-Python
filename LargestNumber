@@ -1,0 +1,13 @@
+# describe what number is returns in the larger
+#the goal is to return the largest number from the function 
+
+def larger(nums):
+  largest_seen = nums[0]
+  for num in nums:
+    if num > largest_seen:
+      largest_seen = num
+    
+  return largest_seen
+
+
+print(larger([-1,-32,7,10]))
